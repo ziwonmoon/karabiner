@@ -11,8 +11,6 @@
                         "description": "ZWVi",
                         "manipulators": [
                             {
-                                "description": "Switch to insert mode",
-                                "from": { "key_code": "i" },
                                 "conditions": [
                                     {
                                         "name": "current_mode",
@@ -20,6 +18,8 @@
                                         "value": "normal"
                                     }
                                 ],
+                                "description": "Switch to insert mode",
+                                "from": { "key_code": "i" },
                                 "to": [
                                     {
                                         "set_variable": {
@@ -31,8 +31,6 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Switch to normal mode",
-                                "from": { "key_code": "escape" },
                                 "conditions": [
                                     {
                                         "name": "current_mode",
@@ -40,6 +38,8 @@
                                         "value": "insert"
                                     }
                                 ],
+                                "description": "Switch to normal mode",
+                                "from": { "key_code": "escape" },
                                 "to": [
                                     {
                                         "set_variable": {
@@ -50,16 +50,513 @@
                                 ],
                                 "type": "basic"
                             },
+
+
                             {
                                 "conditions": [
                                     {
                                         "name": "current_mode",
                                         "type": "variable_if",
-                                        "value": "insert"
+                                        "value": "normal"
                                     }
                                 ],
+                                "description": "left arrow",
+                                "from": { "key_code": "h" },
+                                "to": [{ "key_code": "left_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "down arrow",
+                                "from": { "key_code": "j" },
+                                "to": [{ "key_code": "down_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "up arrow",
+                                "from": { "key_code": "k" },
+                                "to": [{ "key_code": "up_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "right arrow",
+                                "from": { "key_code": "l" },
+                                "to": [{ "key_code": "right_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: a",
+                                "from": { "key_code": "a" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: b",
+                                "from": { "key_code": "b" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: c",
+                                "from": { "key_code": "c" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: d",
+                                "from": { "key_code": "d" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: e",
+                                "from": { "key_code": "e" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: f",
+                                "from": { "key_code": "f" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: g",
+                                "from": { "key_code": "g" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: h",
+                                "from": { "key_code": "h" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: j",
+                                "from": { "key_code": "j" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: k",
+                                "from": { "key_code": "k" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: l",
+                                "from": { "key_code": "l" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: m",
+                                "from": { "key_code": "m" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: n",
+                                "from": { "key_code": "n" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: o",
+                                "from": { "key_code": "o" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: p",
+                                "from": { "key_code": "p" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: q",
+                                "from": { "key_code": "q" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: r",
+                                "from": { "key_code": "r" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: s",
+                                "from": { "key_code": "s" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: t",
+                                "from": { "key_code": "t" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: u",
+                                "from": { "key_code": "u" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: v",
+                                "from": { "key_code": "v" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: w",
+                                "from": { "key_code": "w" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: x",
                                 "from": { "key_code": "x" },
-                                "to": [{ "key_code": "g" }],
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: y",
+                                "from": { "key_code": "y" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: z",
+                                "from": { "key_code": "z" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 0",
+                                "from": { "key_code": "0" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 1",
+                                "from": { "key_code": "1" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 2",
+                                "from": { "key_code": "2" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 3",
+                                "from": { "key_code": "3" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 4",
+                                "from": { "key_code": "4" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 5",
+                                "from": { "key_code": "5" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 6",
+                                "from": { "key_code": "6" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 7",
+                                "from": { "key_code": "7" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 8",
+                                "from": { "key_code": "8" },
+                                "to": [],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "current_mode",
+                                        "type": "variable_if",
+                                        "value": "normal"
+                                    }
+                                ],
+                                "description": "Block key: 9",
+                                "from": { "key_code": "9" },
+                                "to": [],
                                 "type": "basic"
                             }
                         ]
